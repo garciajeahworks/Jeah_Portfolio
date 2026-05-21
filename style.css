@@ -1,0 +1,436 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+
+
+body{
+  background: #f8f9fb;
+primary: #111827;
+accent: #6c63ff;
+text: #4b5563;
+}
+
+/* HERO */
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:80px 10%;
+    background:#f8f9fb;
+    gap:50px;
+}
+
+.hero-content{
+    flex:1;
+}
+
+.tag{
+    display:inline-block;
+    padding:8px 18px;
+    background:#e9e7ff;
+    color:#6c63ff;
+    border-radius:50px;
+    font-size:14px;
+    font-weight:600;
+    margin-bottom:20px;
+}
+
+.hero-content h1{
+    font-size:70px;
+    line-height:1;
+    color:#111827;
+}
+
+.hero-content h2{
+    font-size:28px;
+    color:#6c63ff;
+    margin:15px 0;
+}
+
+.hero-description{
+    max-width:600px;
+    line-height:1.8;
+    color:#4b5563;
+    margin-bottom:30px;
+}
+
+.hero-buttons{
+    display:flex;
+    gap:15px;
+}
+
+.btn{
+    padding:14px 28px;
+    border-radius:10px;
+    text-decoration:none;
+    font-weight:600;
+    transition:0.3s;
+}
+
+.primary{
+    background:#6c63ff;
+    color:#fff;
+}
+
+.primary:hover{
+    transform:translateY(-3px);
+}
+
+.secondary{
+    border:2px solid #6c63ff;
+    color:#6c63ff;
+}
+
+.hero-image img{
+    width:380px;
+    border-radius:30px;
+    box-shadow:0 15px 40px rgba(0,0,0,0.1);
+}
+
+.big-text h1{
+    font-size:170px;
+    font-weight:800;
+    text-transform:uppercase;
+    color:#000;
+    letter-spacing:-10px;
+}
+
+.big-text span{
+    color:#000;
+}
+
+.big-text h2{
+    position:absolute;
+    top:100px;
+    right:27%;
+    font-size:60px;
+    color:#d8c9b3;
+}
+.hero-image{
+    flex:1;
+    display:flex;
+    justify-content:flex-end;
+}
+
+.hero-image img{
+    width:380px;
+    border-radius:30px;
+    box-shadow:0 15px 40px rgba(0,0,0,0.1);
+
+    position:relative;
+    top:0;
+    left:0;
+    transform:none;
+}
+/* ABOUT */
+
+.about{
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:flex-start;
+    gap:60px;
+    padding:100px 100px;
+}
+
+.id-card{
+    position:relative;
+    width:250px;
+}
+
+.lanyard{
+    width:6px;
+    height:120px;
+    background:#fff;
+    border-radius:20px;
+    margin:auto;
+    box-shadow:0 5px 10px rgba(0,0,0,0.2);
+}
+
+.card{
+    width:220px;
+    background:#fff;
+    padding:10px;
+    border-radius:15px;
+    transform:rotate(-10deg);
+    box-shadow:0 10px 30px rgba(0,0,0,0.15);
+}
+
+.card img{
+    width:100%;
+    border-radius:10px;
+}
+
+.about-content{
+    width:70%;
+}
+
+.intro h2{
+    font-size:45px;
+    margin-bottom:15px;
+}
+
+.intro span{
+    color:#6c63ff;
+}
+
+.intro p{
+    line-height:1.9;
+    color:#555;
+    max-width:900px;
+}
+
+.info-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:40px;
+    margin-top:60px;
+}
+
+.info-box h3{
+    margin-bottom:20px;
+    font-size:25px;
+}
+
+.item{
+    margin-bottom:25px;
+}
+
+.item h4{
+    font-size:16px;
+}
+
+.item p{
+    color:#666;
+}
+
+.item span{
+    font-size:14px;
+    color:#999;
+}
+
+.contact-item{
+    display:flex;
+    align-items:center;
+    gap:15px;
+    margin-bottom:20px;
+}
+
+.contact-item i{
+    font-size:22px;
+}
+
+.software-title{
+    margin-top:40px;
+}
+
+.software-icons{
+    display:flex;
+    gap:10px;
+    margin-top:20px;
+}
+
+.software-icons img{
+    width:40px;
+}
+
+/* PROJECTS */
+
+.projects{
+    width:100%;
+    padding:120px 80px;
+    position:relative;
+}
+
+.content-bg{
+    position:relative;
+    margin-bottom:60px;
+}
+
+.content-bg h1{
+    font-size:180px;
+    color:transparent;
+    -webkit-text-stroke:2px #ddd;
+    text-align:center;
+    font-weight:800;
+}
+
+.numbers{
+    position:absolute;
+    top:-20px;
+    width:100%;
+    display:flex;
+    justify-content:space-around;
+}
+
+.numbers span{
+    font-size:70px;
+    font-weight:700;
+    color:#d9c7ae;
+}
+
+.project-grid{
+    display:grid;
+    grid-template-columns:repeat(5,1fr);
+    gap:15px;
+}
+
+.project-card{
+    height:500px;
+    position:relative;
+    overflow:hidden;
+    padding:20px;
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-end;
+}
+
+.project-card img{
+    width:150px;
+    position:absolute;
+    top:50px;
+    left:50%;
+    transform:translateX(-50%);
+}
+
+.project-card h1{
+    font-size:140px;
+    color:#fff;
+    line-height:1;
+}
+
+.project-card h4{
+    color:#fff;
+    font-size:20px;
+}
+
+.project-card p{
+    color:#fff;
+    font-size:14px;
+}
+
+/* COLORS */
+
+.blue{
+    background:#617ce8;
+}
+
+.beige{
+    background:#d5ceb8;
+}
+
+.green{
+    background:#b5c98b;
+}
+
+.red{
+    background:#f15454;
+}
+
+.purple{
+    background:#8197e8;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:1200px){
+
+    .project-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .info-grid{
+        grid-template-columns:1fr;
+    }
+
+    .about{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .about-content{
+        width:100%;
+    }
+}
+
+@media(max-width:768px){
+
+    .big-text h1{
+        font-size:90px;
+        letter-spacing:-4px;
+        text-align:center;
+    }
+
+    .hero-image img{
+        width:250px;
+        top:180px;
+    }
+
+    .intro h2{
+        font-size:32px;
+    }
+
+    .project-grid{
+        grid-template-columns:1fr;
+    }
+
+    .content-bg h1{
+        font-size:90px;
+    }
+
+    .numbers span{
+        font-size:35px;
+    }
+
+    .projects{
+        padding:80px 20px;
+    }
+
+    .about{
+        padding:80px 20px;
+    }
+}
+
+.services{
+    padding:100px 10%;
+    background:#fff;
+}
+
+.section-title{
+    text-align:center;
+    font-size:45px;
+    margin-bottom:60px;
+}
+
+.services-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.service-card{
+    background:#f8f9fb;
+    padding:40px 30px;
+    border-radius:20px;
+    transition:0.3s;
+}
+
+.service-card:hover{
+    transform:translateY(-8px);
+}
+
+.service-card i{
+    font-size:40px;
+    color:#6c63ff;
+    margin-bottom:20px;
+}
+
+.service-card h3{
+    margin-bottom:15px;
+}
